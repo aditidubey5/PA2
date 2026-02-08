@@ -1,0 +1,89 @@
+
+[x-cloak] { display: none !important; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F5F5DC;
+    color: #333333;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, .serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sage-bg { background-color: #87A96B; }
+.sage-text { color: #87A96B; }
+
+.btn-primary {
+    background-color: #87A96B;
+    color: white;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 15px -3px rgba(135, 169, 107, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #76965a;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 20px -3px rgba(135, 169, 107, 0.3);
+}
+
+.btn-outline {
+    border: 2px solid #87A96B;
+    color: #87A96B;
+    transition: all 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #87A96B;
+    color: white;
+}
+
+.form-input {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    padding: 0.75rem 1rem;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.form-input:focus {
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(135, 169, 107, 0.3);
+}
+
+.quiz-option {
+    width: 100%;
+    text-align: left;
+    padding: 1rem 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+.quiz-option:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: translateX(4px);
+}
+
+@keyframes fade-up {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+    animation: fade-up 0.8s ease-out forwards;
+}
